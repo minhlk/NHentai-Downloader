@@ -7,7 +7,6 @@ const app = express()
 const port = 3000
 const cheerio = require('cheerio')
 const WebRequest = require('web-request')
-
 app.set('view engine', 'pug');
 // app.set('views', path.join(__dirname, 'views'));                                                                                                                                        
 // app.use(express.static(path.join(__dirname, 'public'))); 
