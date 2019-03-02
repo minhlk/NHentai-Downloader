@@ -13,7 +13,20 @@ npm start
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
+## NPM Install
 
+```
+$ npm i nhentai-image-getter
+```
+
+## Usage
+
+```js
+const nHentai = require("nhentai-image-getter");
+
+nHentai("manga-url").then(images => console.log(images));
+
+```
 
 ## Contributors
 
