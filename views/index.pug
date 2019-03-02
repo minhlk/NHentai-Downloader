@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title nHentai Downloader
+    link(rel='stylesheet', type='text/css', href='/css/styles.css')
+  body
+    form.form-group
+      label(for='url')
+      input.form-item.url(type='text', name='url')
+      input.form-item.btn(type='submit' ,value = 'Get Images')
+    if ( status == 400 )
+      h1.err-mes=msg
+    
+    if ( status == 200 )
+      ul.img-group
+        each img in imageUrls
+          img.img-item(src=img)
